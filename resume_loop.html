@@ -1,0 +1,116 @@
+<html>
+<body>
+    <script>
+let myResume=[
+{
+  "basics": {
+    "name": "T.A.M.Shanmugapriya",
+    "email": "priyabeeee@gmail.com",
+    "phone": 1234567890,
+    "degree": "Masters in Electrical",
+    "location": {
+      "address": "shanthi nagar,Ramapuram",
+      "postalCode": 600089,
+      "city": "chennai",
+      "countryCode": "India",
+      "region": "Tamilnadu"
+    }
+    }
+  },
+  {"work": [
+    {
+      "company": "sedinTech",
+      "position": "Software Engineer",
+      "startDate": "January 2017",
+      "endDate": "september 2021"
+      
+    },
+    {
+      "company": "TCS",
+      "position": "Senior Software Engineer",
+      "startDate": "December 2021",
+      "endDate": "May 2024"
+    }
+  ]},
+  {"education": [
+    {
+      "institution": "PKN Higher secondary school",
+      "area": "Tirumangalam",
+      "studyType": "stateboard",
+      "gpa": "8.5",
+      "STD": "10th"
+    },
+    {
+      "institution": "PKN Higher secondary school",
+      "area": "Tirumangalam",
+      "studyType": "stateboard",
+      "gpa": "7.5",
+      "STD": "12th"
+    },
+    {
+      "institution": "Sacs College",
+      "area": "Madurai",
+      "studyType": "Anna university",
+      "gpa": "6.2",
+      "STD": "B.E"
+    },
+    {
+      "institution": "National College",
+      "area": "Kovilpatti",
+      "studyType": "Anna university",
+      "gpa": "7.5",
+      "STD": "M.E"
+    }
+  ]},
+  {"skills": [
+    {
+      "language": "SQL",
+      "Tool": "Japer",
+      "keywords": [
+        "Sql is a query language","Jasper is Report design Tool"
+      ]
+    }
+  ]},
+  {"languages": [
+    {
+      "language": "Tamil,English",
+      "fluency": "Tamil,English"
+    }
+  ]},
+  {"interests": [
+    {
+      "name": "Baking",
+      "keywords": [
+        "cakes", "brownies"
+      ]
+    }
+  ]
+}
+]
+
+//ForEach 
+myResume.forEach((a)=>{
+  console.log("forEach itertion",a)
+})
+
+//For
+let newarray=[]
+  for(i=0;i<myResume.length;i++){
+    newarray.push( myResume[i])
+  }
+  console.log("foritertion",newarray)
+
+//ForIn--i is iteration
+for (let i in myResume) {
+  console.log("for-in itertion",myResume[i]);
+}
+
+//Forof---i is value
+for (let i of myResume) {
+  console.log("for-of itertion",i);
+}
+
+
+</script>
+</body>
+</html>

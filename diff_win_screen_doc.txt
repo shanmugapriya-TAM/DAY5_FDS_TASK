@@ -1,0 +1,44 @@
+//Difference between window screen and objects in javascript
+window is the main JavaScript object root, aka the global object in a browser, and it can also be treated as the root of the document object model. You can access it as window.
+window.screen or just screen is a small information object about physical screen dimensions.
+window.document or just document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
+Since window is the global object, you can reference any properties of it with just the property name - so you do not have to write down window. - it will be figured out by the runtime.
+Comparision between document and window ,screen
+Document Objects:
+    Represents a web page loaded in the browser.
+    Accessed using window.document or simply document.
+    Allows access to elements within the HTML page.
+    Used for adding dynamic content to the web page.
+    Common properties include:
+        activeElement: Returns the currently active element.
+        body: Returns the contents of the <body> element.
+        title: Returns the title of the document.
+    Common methods include:
+        addEventListener(): Attaches an event handler.
+        adoptNode(): Adopts a node from another document.
+
+Window Objects:
+    Represents the browser window or frame.
+    Contains properties, methods, and functionalities related to the entire window.
+    Global object accessible as window.
+    The document object is a property of the window.
+    Provides broader scope beyond the specific web page.
+    Example properties:
+        screen: Information about physical screen dimensions.
+        location: URL of the current page.
+
+Screen:
+    The window.screen object contains information about the user's screen.
+    The window.screen object can be written without the window prefix.
+        Properties:
+            screen.width---This property returns the width of the visitor's screen in pixels.
+            screen.height---This property returns the height of the visitor's screen in pixels.
+            screen.availWidth---This property returns the width of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.
+            screen.availHeight---This property returns the height of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.
+            screen.colorDepth---This property returns the number of bits used to display one color.
+            screen.pixelDepth---This property returns the pixel depth of the screen.
+        In modern computers, Color Depth and Pixel Depth are equal.
+        screen properties width and height are the full screen
+        screen properties availWidth and availHeight omit the toolbar
+In summary, while the document object focuses on representing and manipulating content within an HTML document, the window object encompasses the entire browser window and its properties.
+window.screen or just screen is a small information object about physical screen dimensions.
